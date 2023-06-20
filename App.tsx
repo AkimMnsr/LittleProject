@@ -14,7 +14,6 @@ export default function App(){
 
   const submitHandler = () => {
     setDisplayModal(false);
-    console.log(players)
   };
 
   const addingNewPlayer = (name:string, sexe:string, selectedButton:string) => { 
@@ -25,7 +24,6 @@ export default function App(){
       genre: sexe,
       interaction: selectedButton
     };
-    console.log(Player)
     setPlayers((currentPlayers) => [Player, ...currentPlayers]);
     setDisplayModal(false);
     enabledToPlay();
@@ -44,8 +42,6 @@ export default function App(){
 
   const enabledToPlay = () => {
     players.length > 1 ? setDisabled(false) : setDisabled(true);
-    console.log(players.length)
-    console.log(players)
   }
 
   const play = () => {

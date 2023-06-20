@@ -42,10 +42,8 @@ const AddPlayer: React.FC<AddPlayerProps> = ({submitHandler, displayModal, addin
         return updatedState;
       });
     };    
-    console.log(buttonName)
     Animated.spring(bounceValues[0][index], { toValue: 1.2, friction: 3, useNativeDriver: true }).start(); 
-    
-  };
+};
 
   const handlePressOut = ( index: number) => {
     setIsPressed(prevState => {

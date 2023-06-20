@@ -1,0 +1,28 @@
+{
+    "extends": "@tsconfig/react-native/tsconfig.json",
+    "compilerOptions": {
+      "module": "esnext",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "rootDir": ".",
+      "target": "es2016",
+      "lib": ["esnext", "DOM"],
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": false,
+      "noEmit": true,
+      "checkJs": false
+    },
+    "include": [
+        "App.tsx",
+        "components/**/*.tsx"
+      ],
+      "exclude": [        
+        "node_modules"
+      ],
+}
